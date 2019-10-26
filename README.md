@@ -42,12 +42,11 @@ I identify that 2 ETFs tracking securities in the sector of the Materials perfor
 To the best of my knowledge, I can infer empirically that the Materials sector is the one less sensible to yield curve inversions. Let’s remember that according to literature yield curve inversion forecast potential economic crisis, thus less earnings for corporations and a decrease in market capitalization. 
 
 <h1> RUNNING THE CODE </h1>
-yield_curve_data.py computes the spread between 10 years US Treasury Bonds and 2 years US Treasury Bonds. The data comes from the US FRED Database. 
+<i>yield_curve_data.py</i> computes the spread between 10 years US Treasury Bonds and 2 years US Treasury Bonds. The data comes from the US FRED Database. 
 
-etfs.py merges the etfs per industry to a one unique file per sector. 
+<i>etfs.py</i> merges the etfs per industry to a one unique file per sector. 
 
-analyze_etfs.py parses all the industry .csv files and returns files containing the performances for each sector during and after the inversion.
+<i>analyze_etfs.py</i> parses all the industry .csv files and returns files containing the performances for each sector during and after the inversion.
 
-During After Inversion.ipynb performes explanatory data analysis using data returned from the previous file. 
+<i>During After Inversion.ipynb</i> performes explanatory data analysis using data returned from the previous file. 
 
-TO BE CONTINUED
