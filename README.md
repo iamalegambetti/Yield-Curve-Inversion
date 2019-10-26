@@ -1,7 +1,8 @@
 # yield_curve_inversion
 
-!!! DISCLAIMER !!! 
+<h1>!!! DISCLAIMER !!! 
 In analyze_etfs.py change the path of data_directory with your own absolute/relative path. 
+</h1>
 
 <h1>
 <bold>GOAL OF THE RESEARCH</bold>
