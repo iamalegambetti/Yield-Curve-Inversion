@@ -11,8 +11,8 @@ In analyze_etfs.py change the path of data_directory with your own absolute/rela
 The goal of the research is to point out which stock sectors perform the best during and after an inversion of the yield curve, this curve showing the relationship between the interest rate and the time to maturity, known as the "term", of the debt for a given borrower in a given currency. 
 A not superficial point to stress is that the yield curve is considered by most asset managers as a good predictor for recession. 
 
-<h1> HOW IT WORKS </h1>
-I selected the spread between 10 years treasury constant maturity bonds and the 2 year US Treasury constant maturity bonds to track the yield curve performance. To track the various sectors’ performances I selected the top 3 ETFs for market capitalization for each sector analysed after the 2000 comprised (when possible).
+<h1> RESEARCH METHODS </h1>
+I selected the spread between 10 years US Treasury constant maturity bonds and the 2 year US Treasury constant maturity bonds to track the yield curve performance. To track the various sectors’ performances I selected the top 3 ETFs for market capitalization for each sector analysed after the 2000 comprised (when possible).
 After downloading the Time Series for 33 ETFs for 11 industries: Materials, Financials, Consumer Discretionary, Consumer Staples, Energy, Healthcare, Utilities, Telecommunications, Industrials, Technology and Real Estate, I studied how the etfs linked to those industries performed during:
 <ul>
   <li>The period during the yield curve inversion,</li>
@@ -35,8 +35,19 @@ The ETFs that performed with positive returns (Buy and Hold) at the start of eac
 During this yield curve inversion the 3 most remarkable ETFs that performed well both during and after the inversion were: VDE, XLE (Energy) and VAW (Materials). Their returns were (32%, 13%), (30%, 12%) and (35%, 3%) respectively.
 After the inversion also these ETFs performed well: GDX (Materials) with a return of 48%, IBB and VHF (both Healthcare) with a return of 34% and 4% respectively.
 
-  
+<h3>
+Common Points
+</h3>
+I identify that 2 ETFs tracking securities in the sector of the Materials performed well both during and after the inversion (XLB, VAW). For the last inversion then, again a Material Security ETF(GDX) performed well then. 
+To the best of my knowledge, I can infer empirically that the Materials sector is the one less sensible to yield curve inversions. Let’s remember that according to literature yield curve inversion forecast potential economic crisis, thus less earnings for corporations and a decrease in market capitalization. 
 
-During After Inversion.ipynb reflects the summary statistics of the research, pointing out the results of the goal of the project.
+<h1> RUNNING THE CODE </h1>
+yield_curve_data.py computes the spread between 10 years US Treasury Bonds and 2 years US Treasury Bonds. The data comes from the US FRED Database. 
+
+etfs.py merges the etfs per industry to a one unique file per sector. 
+
+analyze_etfs.py parses all the industry .csv files and returns files containing the performances for each sector during and after the inversion.
+
+During After Inversion.ipynb performes explanatory data analysis using data returned from the previous file. 
 
 TO BE CONTINUED
