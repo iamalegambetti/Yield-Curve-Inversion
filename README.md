@@ -3,7 +3,7 @@
 !!! DISCLAIMER !!! 
 In analyze_etfs.py change the path of data_directory with your own absolute/relative path. 
 
-GOAL OF THE RESEARCH
+<bold>GOAL OF THE RESEARCH</bold>
 Macroeconomics report on the yield curve inversion pointing out which sectors are more likely to perform better during and after an inversion happens.
 
 This piece of code returned very helpful in a research in macroeconomics concerning the inversion of the yield curve. 
